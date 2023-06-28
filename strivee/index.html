@@ -55,62 +55,67 @@
         padding: 10px;
         text-align: center;
       }
+      .button-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .start-button {
+        margin-right: auto; /* Pushes the button to the start */
+      }
+
+      .end-button {
+        margin-left: auto; /* Pushes the button to the end */
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Costan</h1>
+      <h1>Strivee</h1>
       <h5>
-        A "Kosan" management system, intended to digitalize transaction requests
-        and records
+        A service marketplace, focuses on finding nearby assistance and help
       </h5>
       <img
-        src="/port_assets/costan-logo.png"
+        src="/port_assets/strivee-logo.png"
         alt="Costan Logo"
-        class="bg-light mt-3 py-2"
+        class="mt-3 py-2"
         style="max-width: 150px"
       />
       <h5 class="py-3 mt-3 mb-3 bg-dark">
-        FullStack Developer <br />
-        PHP - Laravel - Bootstrap
+        Backend Developer <br />
+        Functional PHP - Bootstrap
       </h5>
-      <h6>
-        <a href="/" class="btn btn-secondary"><< Back</a>
+      <div class="button-container px-5 mt-3">
+        <a href="/" class="start-button btn btn-secondary"><- Back</a>
+        <div class="flex-grow"></div>
+        <!-- Empty element to push the second button to the end -->
         <a
-          href="https://ipb.link/costan"
-          class="btn btn-secondary"
+          href="https://ipb.link/strivee"
           target="_blank"
-          >Visit >></a
+          class="end-button btn btn-secondary"
+          >Visit -></a
         >
-      </h6>
+      </div>
     </header>
-    <div class="text-dark text-center py-3" style="background-color: #fceeb0">
-      <i>
-        <a href=""><b>Contact me</b></a> if you want to ba part of this project,
-        or want to apply this app to your own "kosan"
-      </i>
-    </div>
     <section style="background-color: #5c573e">
       <div
         style="background-color: #b0e0e6"
         class="container border border-3 border-secondary rounded mb-5 mt-3"
       >
         <h2 class="mt-3">
-          <b><span data-feather="info"></span> A little about Costan</b>
+          <b><span data-feather="info"></span> About Strivee</b>
         </h2>
         <hr />
         <p>
-          Costan is a "kosan" management system, developed as the final project
-          of "System Analisys and Design" subject, but considering real
-          implementation of digital transition.
+          Strivee is a web app, developed to help client find nearby services,
+          and service provider to get more clients. The user, wether the client
+          or service provider will both have to make a registration to the app
+          in order to use app (Peer to peer)
         </p>
         <p>
-          The product focuses on stating room conditions and managing
-          transaction request in pseudo-realtime (a fully automated system would
-          interupt some interaction in a digital transitioning environment)
-          based on the performance of the <b>admin</b>. However, this app does
-          not provide any payment gate so it works as the comunication
-          intermediary.
+          The app will only connect both party with the listed contact (for now
+          it only support whatsapp). It also provide star rating system and
+          client reviews to help clients determine their decision
         </p>
       </div>
       <div
@@ -125,51 +130,28 @@
         <p>
           Go to our product example, test the feature and the flow of the app
           <br /><a
-            href="https://ipb.link/costan"
+            href="https://ipb.link/strivee"
             class="card-link"
             target="_blank"
-            >ipb.link/costan</a
+            >ipb.link/strivee</a
           >
           <br />
           <b class="text-secondary">User credentials :</b>
           <span class="text-secondary">
             <br />
-            <br />Username : udinmarkudin <br />password : 12345
+            <br />Username : admin <br />password : admin
             <br />
           </span>
           <br />
-          You can also use any of the username listed in the admin dashboard,
-          the password wera all the same
+          You can also use any of the username listed bellow, the password were
+          all the same. Or just make a new account
           <br />
-          <b
-            >*Please do not change the password since i wouldn't be able to
-            reset the password to default</b
-          >
-        </p>
-        <hr />
-        <h4 class="mt-5">
-          <span data-feather="database"></span> Admin Dashboard
-        </h4>
-        <p>
-          See the admin dashboard, you can manage the room, request, and other
-          components
-          <br /><a
-            href="https://ipb.link/costan-admin"
-            class="card-link"
-            target="_blank"
-            >ipb.link/costan-admin</a
-          >
-          <br />
-          <b class="text-secondary">User credentials :</b><br />
-          <span class="text-secondary">
-            <br />Username : mrdengklek <br />password : 12345
-            <br />
-          </span>
-          <br />
-          <b
-            >*Please do not add any new roomtype and delete or add images since
-            the host provider prohibits image request</b
-          >
+          <img
+            src="/port_assets/strivee-users.jpg"
+            alt="Rooms"
+            class="border border-2 border-secondary rounded img-fluid mt-3"
+            style="max-width: 250px"
+          />
         </p>
       </div>
       <div
@@ -181,71 +163,49 @@
         </h2>
         <hr />
         <h4>
-          <b><span data-feather="home"></span> Stating room condition</b>
+          <b><span data-feather="home"></span> Listing the services provided</b>
         </h4>
         <p>
-          Costan is able to provide all the room's state, such as Available,
-          Occupied, or Under Maintenance. The behavior would also vary according
-          to the room's state, like the room would not be able to be ordered if
-          it is <b>Occupied</b> or <b>Under Maintenance</b>.
+          The first thing you'll see when visiting our web is list of services
+          available, with an extra information of wether they are "online"
+          services or not. Registered user will also get an extra list of
+          services available in the registered area
         </p>
         <img
-          src="/port_assets/costan-rooms.jpg"
+          src="/port_assets/strivee-index.jpg"
+          alt="Rooms"
+          class="border border-2 border-secondary rounded mb-5 img-fluid"
+          style="max-width: 500px"
+        />
+        <br>
+        <img
+          src="/port_assets/strivee-login-index.jpg"
           alt="Rooms"
           class="border border-2 border-secondary rounded mb-5 img-fluid"
           style="max-width: 500px"
         />
         <hr />
         <h4>
-          <b
-            ><span data-feather="settings"></span> Managing Order, Room, and
-            User</b
-          >
+          <b><span data-feather="settings"></span> Services and user account</b>
         </h4>
         <p>
-          The order menu from this app would not only redirect the user to the
-          admin chatroom, but it would also create an order request to the
-          admin. The admin then can accept or decline the request based on the
-          condition. Accpeting request would make the request owner a user with
-          the requested username and some predefined password which can be
-          changed later.
+          Opening one of the service, you will find the detailed description the
+          service, along with their score and reviews coming from past clients.
+          Proceeding to order the service would open the contact of the service
+          provider, and would enable the client to make review after the order
+          has been completed.
         </p>
         <img
-          src="/port_assets/costan-requests.jpg"
+          src="/port_assets/strivee-service.jpg"
           alt="Rooms"
           class="border border-2 border-secondary rounded mb-3 img-fluid"
           style="max-width: 500px"
         />
         <p>
-          The web can also manage the registered user manually, so the order
-          that does not come from the order menu (eg. contacting the admin
-          directly instead of visiting the web), can still be organized by the
-          admin. The admin and the user can also detect wether or not they have
-          paid their bills based on the current date, so it would minimize
-          postponded payment caused by the lack of detection and management
+          In the profile, you can always customize your own data and services.
         </p>
         <img
-          src="/port_assets/costan-users.jpg"
-          alt="Rooms"
-          class="border border-2 border-secondary rounded mb-3 img-fluid"
-          style="max-width: 500px"
-        />
-        <p>
-          It also has some medium-level customization to the rooms, facility,
-          and roomtype so the user can always be provided with up-to-date
-          information
-        </p>
-        <hr />
-        <h4 class="mt-5">
-          <b><span data-feather="users"></span> User account</b>
-        </h4>
-        <p>
-          Registered user will be given their own user account, used to track
-          bill payments history, extending the rent duration, detecting unpaid
-          bill, and contact to the admin for any inconvinient and request.
-        </p>
-        <img
-          src="/port_assets/costan-bills.jpg"
+          src="/port_assets/strive-profile.jpg"
           alt="Rooms"
           class="border border-2 border-secondary rounded mb-3 img-fluid"
           style="max-width: 500px"

@@ -55,6 +55,18 @@
         padding: 10px;
         text-align: center;
       }
+      .button-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .start-button {
+        margin-right: auto; /* Pushes the button to the start */
+      }
+
+      .end-button {
+        margin-left: auto; /* Pushes the button to the end */
+      }
     </style>
   </head>
   <body>
@@ -74,19 +86,21 @@
         FullStack Developer <br />
         PHP - Laravel - Bootstrap
       </h5>
-      <h6>
-        <a href="/" class="btn btn-secondary"><< Back</a>
+      <div class="button-container px-5 mt-3">
+        <a href="/" class="start-button btn btn-secondary"><- Back</a>
+        <div class="flex-grow"></div>
+        <!-- Empty element to push the second button to the end -->
         <a
           href="https://ipb.link/costan"
-          class="btn btn-secondary"
           target="_blank"
-          >Visit >></a
+          class="end-button btn btn-secondary"
+          >Visit -></a
         >
-      </h6>
+      </div>
     </header>
     <div class="text-dark text-center py-3" style="background-color: #fceeb0">
       <i>
-        <a href=""><b>Contact me</b></a> if you want to ba part of this project,
+        <a href="https://wa.me/6281275608909" target="_blank"><b>Contact me</b></a> if you want to ba part of this project,
         or want to apply this app to your own "kosan"
       </i>
     </div>
