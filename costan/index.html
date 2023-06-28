@@ -67,6 +67,24 @@
       .end-button {
         margin-left: auto; /* Pushes the button to the end */
       }
+
+      .btn {
+        background-color: #00c896;
+      }
+      .btn:hover {
+        background-color: #008161;
+      }
+      .boxed{
+        background-color: #A0D6CF;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .boxed-2{
+        background-color: #C8FCEA;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
     </style>
   </head>
   <body>
@@ -82,34 +100,34 @@
         class="bg-light mt-3 py-2"
         style="max-width: 150px"
       />
-      <h5 class="py-3 mt-3 mb-3 bg-dark">
+      <h5 class="py-3 mt-3 mb-3 rounded-3" style="background-color: #616161;">
         FullStack Developer <br />
         PHP - Laravel - Bootstrap
       </h5>
       <div class="button-container px-5 mt-3">
-        <a href="/" class="start-button btn btn-secondary"><- Back</a>
+        <a href="/" class="start-button btn"><span data-feather="arrow-left"></span> Back</a>
         <div class="flex-grow"></div>
         <!-- Empty element to push the second button to the end -->
         <a
           href="https://ipb.link/costan"
           target="_blank"
-          class="end-button btn btn-secondary"
-          >Visit -></a
+          class="end-button btn"
+          >Visit <span data-feather="arrow-right"></span></a
         >
       </div>
     </header>
-    <div class="text-dark text-center py-3" style="background-color: #fceeb0">
+    <div class="text-dark text-center py-3" style="background-color: #7EB1B3">
       <i>
-        <a href="https://wa.me/6281275608909" target="_blank"><b>Contact me</b></a> if you want to ba part of this project,
+        <a href="https://wa.me/6281275608909" target="_blank" class="text-dark"><b>Contact me</b></a> if you want to be part of this project,
         or want to apply this app to your own "kosan"
       </i>
     </div>
-    <section style="background-color: #5c573e">
+    <section style="background-color: #f2ecff">
       <div
-        style="background-color: #b0e0e6"
-        class="container border border-3 border-secondary rounded mb-5 mt-3"
+        style="background-color: #ffffff"
+        class="container card mb-5 mt-3"
       >
-        <h2 class="mt-3">
+        <h2 class="boxed mt-3">
           <b><span data-feather="info"></span> A little about Costan</b>
         </h2>
         <hr />
@@ -126,16 +144,19 @@
           not provide any payment gate so it works as the comunication
           intermediary.
         </p>
+        <p><b>
+          *The app haven't been fully developed for mobile users so open with computer for your convenience
+        </b></p>
       </div>
       <div
-        style="background-color: #b0e0e6"
-        class="container border border-3 border-secondary rounded mb-5 mt-3"
+        style="background-color: #ffffff"
+        class="container card mb-5 mt-3"
       >
-        <h2 class="mt-3">
+        <h2 class="boxed mt-3">
           <b><span data-feather="check-circle"></span> Give it a test</b>
         </h2>
         <hr />
-        <h4><span data-feather="monitor"></span> Main interface</h4>
+        <h4 class="boxed-2"><span data-feather="monitor"></span> Main interface</h4>
         <p>
           Go to our product example, test the feature and the flow of the app
           <br /><a
@@ -161,7 +182,7 @@
           >
         </p>
         <hr />
-        <h4 class="mt-5">
+        <h4 class="boxed-2" class="mt-5">
           <span data-feather="database"></span> Admin Dashboard
         </h4>
         <p>
@@ -187,14 +208,14 @@
         </p>
       </div>
       <div
-        style="background-color: #b0e0e6"
-        class="container border border-3 border-secondary rounded mb-5"
+        style="background-color: #ffffff"
+        class="container card mb-5"
       >
-        <h2 class="mt-3">
+        <h2 class="boxed mt-3">
           <b><span data-feather="tool"></span> Features and Capabilies</b>
         </h2>
         <hr />
-        <h4>
+        <h4 class="boxed-2">
           <b><span data-feather="home"></span> Stating room condition</b>
         </h4>
         <p>
@@ -210,7 +231,7 @@
           style="max-width: 500px"
         />
         <hr />
-        <h4>
+        <h4 class="boxed-2">
           <b
             ><span data-feather="settings"></span> Managing Order, Room, and
             User</b
@@ -250,7 +271,7 @@
           information
         </p>
         <hr />
-        <h4 class="mt-5">
+        <h4 class="boxed-2" class="mt-5">
           <b><span data-feather="users"></span> User account</b>
         </h4>
         <p>
@@ -271,7 +292,7 @@
       <p>&copy; 2023 Wanaushaf. All rights reserved.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.slim.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

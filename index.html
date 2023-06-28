@@ -52,18 +52,32 @@
         padding: 10px;
         text-align: center;
       }
+      .btn {
+        background-color: #00c896;
+      }
+      .btn:hover {
+        background-color: #008161;
+      }
+      hr {
+        border: 0px;
+        border-radius: 3px;
+        height: 3px;
+        /* Set the hr color */
+        color: #616161; /* old IE */
+        background-color: #616161; /* Modern Browsers */
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Wan Muhammad Fikri Aushaf</h1>
       <img
-        src="/port_assets/profile-temp.jpg"
+        src="/port_assets/profile.jpeg"
         alt="Profile Photo"
         class="rounded-circle mt-3"
         style="max-width: 150px"
       />
-      <h5 class="py-3 mt-3 mb-3 bg-dark">
+      <h5 class="py-3 mt-3 mb-3 rounded" style="background-color: #616161">
         Computer Science Undergraduate - IPB UNIVERSITY <br />
         PHP | Laravel | Bootstrap | C/C++ | Java
       </h5>
@@ -73,7 +87,7 @@
       </h6>
     </header>
 
-    <section>
+    <section style="background-color: #f2ecff" class="pb-5">
       <div class="container">
         <br />
         <h1 class="text-center mb-3">Completed Projects</h1>
@@ -101,11 +115,8 @@
                     customizability. Created as a monolithic <b>Laravel</b> app
                     with the help of <b>bootstrap</b>
                   </p>
-                  <a href="/costan" class="card-link">see more</a>
-                  <a
-                    href="https://ipb.link/costan"
-                    class="card-link"
-                    target="_blank"
+                  <a href="/costan" class="btn">see more</a>
+                  <a href="https://ipb.link/costan" class="btn" target="_blank"
                     >go to link</a
                   >
                 </div>
@@ -137,11 +148,8 @@
                     Developed using
                     <b> functional PHP, bootstrap</b>
                   </p>
-                  <a href="/strivee" class="card-link">see more</a>
-                  <a
-                    href="https://ipb.link/strivee"
-                    class="card-link"
-                    target="_blank"
+                  <a href="/strivee" class="btn">see more</a>
+                  <a href="https://ipb.link/strivee" class="btn" target="_blank"
                     >go to link</a
                   >
                 </div>
@@ -219,10 +227,9 @@
       </div>
     </section>
 
-    <footer class="mt-5">
+    <footer>
       <p>&copy; 2023 Wanaushaf. All rights reserved.</p>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
